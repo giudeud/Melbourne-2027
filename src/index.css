@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  background: #fafaf8;
+  color: #111;
+  font-feature-settings: 'cv11', 'ss01';
+}
+input[type='date'] {
+  min-height: 36px;
+}
+::selection {
+  background: #e7e5e4;
+}
+/* Grid/flex children must be allowed to shrink so truncated text never widens the page */
+.grid > * {
+  min-width: 0;
+}
